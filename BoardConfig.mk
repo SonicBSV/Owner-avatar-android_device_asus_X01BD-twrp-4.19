@@ -21,18 +21,18 @@
 # definition file).
 #
 
-DEVICE_PATH := device/asus/X00TD
+DEVICE_PATH := device/asus/X01BD
 
 # Build rules
 ALLOW_MISSING_DEPENDENCIES=true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := sdm636
+TARGET_BOOTLOADER_BOARD_NAME := sdm660
 TARGET_NO_BOOTLOADER := true
 
 # Platform
 TARGET_BOARD_PLATFORM := sdm660
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno509
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno512
 TARGET_SUPPORTS_64_BIT_APPS := true
 
 # Architecture
@@ -51,7 +51,7 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a73
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := ASUS_X00TD,X00TD,X00T
+TARGET_OTA_ASSERT_DEVICE := ASUS_X01BD,X01BD,X01B
 
 # Qcom Decryption
 BOARD_USES_QCOM_FBE_DECRYPTION := true
@@ -77,7 +77,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_KERNEL_BASE        := 0x00000000
 BOARD_KERNEL_PAGESIZE    := 4096
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-TARGET_PREBUILT_KERNEL := device/asus/X00TD/prebuilt/Image.gz-dtb
+TARGET_PREBUILT_KERNEL := device/asus/X01BD/prebuilt/Image.gz-dtb
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab

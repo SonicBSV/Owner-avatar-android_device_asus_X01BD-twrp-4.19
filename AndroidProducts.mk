@@ -15,7 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_X00TD.mk
+    $(LOCAL_DIR)/twrp_X01BD.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_X00TD-eng
+    twrp_X01BD-eng

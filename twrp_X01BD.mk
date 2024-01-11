@@ -15,7 +15,7 @@
 #
 
 # Inherit from hardware-specific part of the product configuration
-$(call inherit-product, device/asus/X00TD/device.mk)
+$(call inherit-product, device/asus/X01BD/device.mk)
 
 # Inherit from common AOSP config
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
@@ -28,14 +28,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := X00TD
+PRODUCT_RELEASE_NAME := X01BD
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := twrp_X00TD
-PRODUCT_DEVICE := X00TD
+PRODUCT_NAME := twrp_X01BD
+PRODUCT_DEVICE := X01BD
 PRODUCT_MANUFACTURER := asus
 PRODUCT_BRAND := asus
-PRODUCT_MODEL := Zenfone Max Pro M1
+PRODUCT_MODEL := Zenfone Max Pro M2
 
-TARGET_VENDOR_PRODUCT_NAME := X00TD
-TARGET_VENDOR_DEVICE_NAME := X00TD
+TARGET_VENDOR_PRODUCT_NAME := X01BD
+TARGET_VENDOR_DEVICE_NAME := X01BD
